@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Employees</title>
+
+    <style>
+      #view-employee {
+        background-color: #f0f0f0;
+      }
+      #view-employee p {
+        padding-left: 15px;
+      }
+
+      #view-employee p:first-child {
+        padding-top: 15px;
+      }
+      #view-employee p:last-child {
+        padding-bottom: 15px;
+      }
+
+      button {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Employees</h1>
+
+    <h2>List of Employees</h2>
+    <ul id="employee-list"></ul>
+
+    <form id="search-form">
+      <input type="text" id="search-input" placeholder="Enter first name" />
+      <button type="submit">Search and View Employees</button>
+    </form>
+
+    <h2>Add Employee</h2>
+    <form id="add-form">
+      <input type="text" name="firstname" placeholder="First Name" required />
+      <input type="text" name="lastname" placeholder="Last Name" required />
+      <input type="number" name="age" placeholder="Age" required />
+      <label>Married: <input type="checkbox" name="isMarried" /></label>
+      <button type="submit">Add Employee</button>
+    </form>
+
+    <h2>Edit Employee</h2>
+    <form id="edit-form">
+      <input type="text" name="firstname" placeholder="First Name" required />
+      <input type="text" name="lastname" placeholder="Last Name" required />
+      <input type="number" name="age" placeholder="Age" required />
+      <label>Married: <input type="checkbox" name="isMarried" /></label>
+      <button type="submit">Edit Employee</button>
+    </form>
+
+    <h2>View Employee/s Info</h2>
+    <div id="view-employee"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
